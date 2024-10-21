@@ -33,19 +33,19 @@
         </div>
     </nav>
 
-    <div class="content__flex">
-        <img src="img/H1.svg" alt="" class="heading__text">
-        
-        <div class="content__texts">
-            <h5 class="content__header">About me</h5>
-            <p class="content__text">Born in 2006 Sumqayit, Azerbaijan. Studying in ADA university faculty of information technologies.</p>
-            <h5 class="content__header">Passion</h5>
-            <p class="content__text">Designing and developing websites from scratch.</p>
-            <a href="https://maps.app.goo.gl/6QfsC179wCPg91XY9" target="_blank" class="location__flex">
-                <img src="img/location.svg" alt="" class="location__icon">
-                <div class="location__text">40.587164318 49.667830662</div>
-            </a>
+    <div class="form__wrapper">
+        <div class="form__texts">
+            <h5 class="content__header">Contact</h5>
+            <p class="content__text">Please fill out the form for inquiries, collaborations, or just to say "Hi," and I will get back to you within 2 business days.</p>    
         </div>
+        <form method="POST">
+            <input type="text" name="name" id="" placeholder="[NAME*]" required>
+            <input type="text" name="subject" id="" placeholder="[SUBJECT*]" required>
+            <input type="email" name="email" id="email" placeholder="[EMAIL*]" required>
+            <textarea type="text" name="message" id="" rows="1" placeholder="[MESSAGE*]" required></textarea>
+            <button type="submit"><img src="img/arrow.svg" alt=""> SEND</button>
+        </form>
+
     </div>
 </body>
 

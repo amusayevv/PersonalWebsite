@@ -94,7 +94,16 @@ html, body {
     background-color: #fff;
 }
 
-header {
+body {
+    color: #000;
+    font-family: "JetBrains Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -129,6 +138,9 @@ header {
     width: 24px;
     height: 24px;
 }
+a:hover {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(6%) saturate(3%) hue-rotate(93deg) brightness(91%) contrast(86%);
+}
 .header__texts {
     display: flex;
     align-items: center;
@@ -160,7 +172,7 @@ header {
 .content__texts {
 
 }
-.content__header {
+h5 {
     color: #686561;
     font-family: "Instrument Serif";
     font-size: 32px;
@@ -170,7 +182,7 @@ header {
     letter-spacing: -1.6px;
     margin-top: 85px;
 }
-.content__text {
+p {
     color: #000;
     font-family: "JetBrains Mono";
     font-size: 20px;
@@ -195,4 +207,51 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 28px */
+}
+
+.form__wrapper {
+    max-width: 430px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.form__texts {
+}
+input, textarea {
+    display: flex;
+    padding: 12px 0px;
+    align-items: flex-end;
+    gap: 8px;
+    align-self: stretch;
+    border-bottom: 1px solid #686561;
+    width: 100%;
+    resize: vertical;
+}
+input:focus, textarea:focus {
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+
+.content__header {
+}
+form {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: start;
+}
+.content__text {
+}
+button:hover {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(6%) saturate(3%) hue-rotate(93deg) brightness(91%) contrast(86%);
+}
+button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: underline;
 }
